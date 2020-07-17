@@ -111,7 +111,7 @@ Exam.setAttribute("onclick", "examQuestion()")
 
 var Next = inpt("btnBottom", BackgroundDiv, "button")
 Next.setAttribute("value", "Next")
-Next.setAttribute("onclick", "NextQuestion()")
+Next.setAttribute("onclick", "nextQuestion()")
 
 
 R1.setAttribute("value", "A")
