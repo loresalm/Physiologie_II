@@ -133,6 +133,7 @@ function gotData(data){
 	all_Q = data.val()
 
 	all_questions = all_Q[Object.keys(all_Q)[0]]
+	console.log(all_questions)
 	keys_all = Object.keys(all_questions)
 
 }
