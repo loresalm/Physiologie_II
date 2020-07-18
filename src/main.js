@@ -34,21 +34,20 @@ var GOT_DATA = false
 
 //Init firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyCTerBeBCFv_1C6i23itfCLLTKyPqFsoQs",
-  authDomain: "memoryapp-e81d6.firebaseapp.com",
-  databaseURL: "https://memoryapp-e81d6.firebaseio.com",
-  projectId: "memoryapp-e81d6",
-  storageBucket: "memoryapp-e81d6.appspot.com",
-  messagingSenderId: "374050693737",
-  appId: "1:374050693737:web:d2b02d3be9471e829af8f8",
-  measurementId: "G-GKN4N5QSD3"
+    apiKey: "AIzaSyCUzpbIk250ioh0ji825D1m5jUgug0RRRM",
+    authDomain: "physiologieii.firebaseapp.com",
+    databaseURL: "https://physiologieii.firebaseio.com",
+    projectId: "physiologieii",
+    storageBucket: "physiologieii.appspot.com",
+    messagingSenderId: "702803266277",
+    appId: "1:702803266277:web:68d103f78cc59e5d72220c"
   };
 
-//firebase.initializeApp(firebaseConfig)
-//DB = firebase.database();
+firebase.initializeApp(firebaseConfig)
+DB = firebase.database();
 
-//var ref_Data = DB.ref('Data') 
-//ref_Data.on('value', gotData, errData)
+var ref_Data = DB.ref('Data') 
+ref_Data.on('value', gotData, errData)
 
 //Init scene
 var BackgroundDiv= document.createElement("Div")
@@ -93,7 +92,7 @@ R4DIV.setAttribute("id", "response-text-div");
 BackgroundDiv.appendChild(R4DIV)
 
 var R5 = inpt("btnR", BackgroundDiv, "button")
-R5.setAttribute("onclick", "chose("+4+")")
+R5.setAttribute("onclick", "chose("+5+")")
 
 var R5DIV= document.createElement("Div")
 R5DIV.setAttribute("id", "response-text-div");
@@ -112,7 +111,7 @@ Exam.setAttribute("onclick", "examQuestion()")
 
 var Next = inpt("btnBottom", BackgroundDiv, "button")
 Next.setAttribute("value", "Next")
-Next.setAttribute("onclick", "NextQuestion()")
+Next.setAttribute("onclick", "nextQuestion()")
 
 
 R1.setAttribute("value", "A")
