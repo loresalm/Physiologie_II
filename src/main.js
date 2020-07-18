@@ -41,7 +41,9 @@ const firebaseConfig = {
     storageBucket: "physiologieii.appspot.com",
     messagingSenderId: "702803266277",
     appId: "1:702803266277:web:68d103f78cc59e5d72220c"
+
   };
+
 
 firebase.initializeApp(firebaseConfig)
 DB = firebase.database();
@@ -133,6 +135,7 @@ function gotData(data){
 	all_Q = data.val()
 
 	all_questions = all_Q[Object.keys(all_Q)[0]]
+	console.log(all_questions)
 	keys_all = Object.keys(all_questions)
 
 }
